@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <script>
+      localStorage.setItem(
+        "common-data-storage",
+        JSON.stringify({
+          state: {
+            common: {
+              user: {
+                name: "Dewey.k",
+              },
+            },
+            version: 0,
+          },
+        })
+      );
+    </script>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
